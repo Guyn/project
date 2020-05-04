@@ -1,0 +1,33 @@
+{
+  "name": "@guyn/project",
+  "version": "1.0.0",
+  "description": "Guyn Project Kickstarter",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guyn/project.git"
+  },
+  "keywords": [
+    "Project",
+    "kickstart",
+    "Vue",
+    "Nuxt",
+    "React"
+  ],
+  "author": "Sil van Diepen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Guyn/project/issues"
+  },
+  "homepage": "https://github.com/Guyn/project#readme",
+  "devDependencies": {
+    "lerna": "^3.19.0"
+  },
+  "dependencies": {
+    "@types/node": "^13.13.4",
+    "typescript": "^3.8.3"
+  }
+}

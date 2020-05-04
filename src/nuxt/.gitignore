@@ -1,0 +1,21 @@
+# Dependencies
+node_modules
+
+# Logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# Editors
+.vscode
+.idea
+
+# Misc
+.DS_Store
+config/latest.js
+static/sw.js
+static/icons
