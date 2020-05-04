@@ -79,8 +79,8 @@ module.exports = {
 		let x = 0;
 
 		const doLoader = () => {
-			if (x < 50) {
-				loader.push("h");
+			if (x < 40) {
+				loader.push("▊");
 				x++;
 				process.stdout.write("\r" + this.chalk.blue(loader.join("")));
 			} else {
@@ -123,88 +123,47 @@ module.exports = {
 
 		// await this.npmInstall()
 		setTimeout(() => {
-			console.log(
-				this.chalk.blue("\nhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhh   hhhhhhhhhhhhhhe  .hhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhh   hhhhhhhhhhhhhh   ehhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhh   hh    hhhhhhh    hhhhe      ")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhh      hh   hhhh   hhhhh    ssss")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhh    hhhhi   hhhhhhhhhhh   ssshh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhh   hhhhhh   hhhhhhhhhhhy      h")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhh   hhhhhh   hhhhhhhhhhhhhhsss  ")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhh   hhhhhh   hhhhhhhhhhe  hhhh  ")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhh   hhhhhh   hhhhhhhhhhhs       ")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhsssh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
-			console.log(
-				this.chalk.blue("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
-			);
+			const guynIcon = [
+				"▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▛    ▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▙       ▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊    ▟▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊   ▟▊▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊    ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊▊▊      ▊▊▊▊▊      ▜▊▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊       ▊▊▊▊▊▊▊       ▜▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▛        ▊▊▊▊▊▊▊        ▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊         ▊▊▊▊▊▊▊        ▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▙        ▊▊▊▊▊▊▊        ▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊▙      ▊▊▊▊▊▊▊      ▟▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊▊▊▙     ▊▊▊▊▊     ▊▊▊▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊   ▊▊▊▊▊     ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▛   ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊        ▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊               ▜▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▙                   ▜▊▊▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊▊▊▊▊                ▜▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊     ▊▊▊▊▊▊▙          ▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▙      ▊▊▊▊▊▊▊▊▙        ▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊     ▊▊▊▊▊▊▊▊▊▊▙     ▟▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊▊▊▙   ▜▊▊▊▊▊▊▊▊     ▊▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▙    ▟▊▊▊▊▊▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊",
+				"▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊▊",
+			];
+
+			guynIcon.forEach((line, index) => {
+				if (index < 1) console.log("\n" + this.chalk.blue(line));
+				else console.log(this.chalk.blue(line));
+			});
+
 			console.log();
 			console.log();
 			console.log(
 				this.chalk.bold(`   Done! Your `) +
 					this.chalk.bold.green(`Nuxt `) +
-					this.chalk.bold.blue(`Henri's`) +
-					this.chalk.bold(` project is ready.\n`)
+					this.chalk.bold.pink(`Guyn`) +
+					this.chalk.bold(` App is ready.\n`)
 			);
 			console.log();
 			console.log(

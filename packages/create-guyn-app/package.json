@@ -6,16 +6,21 @@
 	"bin": "dist/cli.js",
 	"scripts": {
 		"test": "jest-ts",
-		"build": "tsc"
+		"build": "tsc",
+		"try": "rm -rf test-project && node dist/cli.js test-project"
 	},
 	"author": "Sil van Diepen",
 	"license": "MIT",
+	"dependencies": {
+		"await-exec": "^0.1.2",
+		"sao": "^1.6.1",
+		"typescript": "^3.8.3"
+	},
 	"devDependencies": {
 		"@types/jest": "^25.2.1",
 		"@types/node": "^13.13.4",
 		"@typescript-eslint/eslint-plugin": "^2.30.0",
 		"@typescript-eslint/parser": "^2.30.0",
-		"await-exec": "^0.1.2",
 		"bili": "^4.9.4",
 		"eslint": "^6.8.0",
 		"eslint-config-prettier": "^6.11.0",
@@ -25,11 +30,9 @@
 		"jes": "^0.6.1",
 		"lint-staged": "^10.2.2",
 		"prettier": "^2.0.5",
-		"sao": "^1.7.0",
 		"shelljs": "^0.8.4",
 		"standard": "^14.3.3",
 		"ts-jest": "^25.4.0",
-		"tslint": "^6.1.2",
-		"typescript": "^3.8.3"
+		"tslint": "^6.1.2"
 	}
 }
