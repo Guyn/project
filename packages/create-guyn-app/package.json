@@ -1,6 +1,6 @@
 {
 	"name": "create-guyn-app",
-	"version": "0.0.2",
+	"version": "0.1.0",
 	"description": "Generate A Guyn App",
 	"main": "dist/cli.js",
 	"bin": "dist/cli.js",
