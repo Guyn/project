@@ -15,17 +15,21 @@ module.exports = {
 					'include',
 					'content',
 					'at-root',
-					'function'
-				]
-			}
+					'function',
+					'warn',
+					'return',
+					'debug',
+					'while',
+				],
+			},
 		],
 		'order/order': [
 			'custom-properties',
 			'dollar-variables',
 			'declarations',
-			'rules'
+			'rules',
 		],
-		indentation: 'tab'
+		indentation: 'tab',
 	},
-	extends: ['stylelint-logical-order']
+	extends: ['stylelint-logical-order'],
 };

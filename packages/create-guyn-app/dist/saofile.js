@@ -164,7 +164,7 @@ module.exports = {
                 console.log();
                 console.log(this.chalk.bold(`   Done! Your `) +
                     this.chalk.bold.green(`Nuxt `) +
-                    this.chalk.bold.pink(`Guyn`) +
+                    this.chalk.bold.red(`Guyn`) +
                     this.chalk.bold(` App is ready.\n`));
                 console.log();
                 console.log(`   Go to your project - cd ${this.chalk.bold(this._answers.project_name)}`);
