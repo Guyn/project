@@ -44,6 +44,7 @@ module.exports = {
 						checked: false,
 					},
 					{ name: "Guyn Color", value: "guyn-color", checked: false },
+					{ name: "GraphQL", value: "graphql", checked: false },
 				],
 				store: true,
 			},
@@ -52,9 +53,10 @@ module.exports = {
 	templateData() {
 		const guynDs = this.answers.project_options.includes("guyn-ds");
 		const guynColor = this.answers.project_options.includes("guyn-color");
+		const graphQL = this.answers.project_options.includes("graphql");
 		const nodeSass = this.answers.project_sass === "node-sass";
 		const sass = this.answers.project_sass === "sass";
-		return { guynDs, guynColor, nodeSass, sass };
+		return { guynDs, guynColor, nodeSass, sass, graphQL };
 	},
 	actions: [
 		{
