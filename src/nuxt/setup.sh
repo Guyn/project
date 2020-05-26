@@ -108,6 +108,7 @@ curl -o ${TARGET}.eslintrc.js -l ${URL}/.eslintrc.js --fail --silent --show-erro
 curl -o ${TARGET}.gitignore -l ${URL}/.gitignore --fail --silent --show-error
 curl -o ${TARGET}.prettierrc -l ${URL}/.prettierrc --fail --silent --show-error
 curl -o ${TARGET}nuxt.config.js -l ${URL}/nuxt.config.js --fail --silent --show-error
+curl -o ${TARGET}jest.config.js -l ${URL}/nuxt.config.js --fail --silent --show-error
 curl -o ${TARGET}README.md -l ${URL}/README.md --fail --silent --show-error
 curl -o ${TARGET}stylelint.config.js -l ${URL}/stylelint.config.js --fail --silent --show-error
 curl -o ${TARGET}tsconfig.json -l ${URL}/tsconfig.json --fail --silent --show-error
