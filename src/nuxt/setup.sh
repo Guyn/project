@@ -98,9 +98,16 @@ printf '\n  Plugins \e[1;34mcreated!\e[0m'
 mkdir ${TARGET}store 
 
 curl -o ${TARGET}store/README.md -l ${URL}/store/README.md --fail --silent --show-error
-curl -o ${TARGET}store/ui.js -l ${URL}/store/ui.js --fail --silent --show-error
+curl -o ${TARGET}store/ui.js -l ${URL}/store/ui.ts --fail --silent --show-error
 
 printf '\n  Store \e[1;34mcreated!\e[0m' 
+
+# Types
+mkdir ${TARGET}store 
+
+curl -o ${TARGET}type/ui.md -l ${URL}/types/ui.ts --fail --silent --show-error
+
+printf '\n  Types \e[1;34mcreated!\e[0m' 
 
 # Config
 curl -o ${TARGET}.babelrc -l ${URL}/.babelrc --fail --silent --show-error
