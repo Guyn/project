@@ -19,16 +19,17 @@
 		"@nuxtjs/axios": "^5.4.1",
 		"@nuxtjs/google-analytics": "^2.2.0",
 		"@nuxt/typescript-runtime": "^0.4.0",
-		"@nuxtjs/pwa": "^3.0.0-0"
+		"@nuxtjs/pwa": "^3.0.0-0",
+		"@types/jest": "^25.2.3"
 	},
 	"devDependencies": {
-		"@guyn-style/custom": "^0.1.0",
 		"@nuxt/typescript-build": "^0.6.0",
 		"@nuxtjs/dotenv": "^1.4.1",
 		"@nuxtjs/eslint-config-typescript": "^1.0.0",
 		"@nuxtjs/eslint-module": "^1.0.0",
 		"@nuxtjs/stylelint-module": "^3.1.0",
 		"@vue/test-utils": "^1.0.0-beta.27",
+		<%_ if (graphQL) { _%>"@nuxtjs/apollo": "^4.0.0",<%_ } _%>
 		"babel-eslint": "^10.0.1",
 		"babel-jest": "^24.1.0",
 		"eslint": "^6.1.0",
@@ -36,9 +37,10 @@
 		"eslint-config-prettier": "^6.10.0",
 		"eslint-plugin-prettier": "^3.1.2",
 		"prettier": "^1.19.1",
-		<%_ if (guynColor) { _%>"guyn@color": "*",<%_ } _%>
-		<%_ if (guynDs) { _%>"guyn@ds": "*",<%_ } _%>
-		"guyn": "^0.1.0",
+		<%_ if (graphQL) { _%>"graphql-tag": "^2.0.0",<%_ } _%>
+		<%_ if (guynColor) { _%>"@guyn/color": "*",<%_ } _%>
+		<%_ if (guynDs) { _%>"@guyn/ds": "*",<%_ } _%>
+		"guyn-style": "^0.1.0",	
 		"nuxt-favicons": "^0.0.2",
 		"husky": "^4.0.0",
 		"jest": "^24.1.0",
