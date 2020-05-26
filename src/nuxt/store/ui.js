@@ -1,40 +1,39 @@
-export const state = () => ({
+import { colorModeType, IUIState } from '@/types';
+
+export const state = (): IUIState => ({
 	colorMode: 'light',
-	menu: {
-		active: false
-	}
+	activeMenu: false
 });
 
 export const mutations = {
-	setMode(state, value) {
-		state.settings.colorMode = value;
+	setMode(state: IUIState, value: colorModeType) {
+		state.colorMode = value;
 	},
-	toggleColorMode(state) {
-		if (state.settings.colorMode === 'light') state.settings.colorMode = 'dark';
-		else state.settings.colorMode = 'light';
+	toggleColorMode(state: IUIState) {
+		state.colorMode = state.colorMode === 'light' ? 'dark' : 'light';
 	},
-	setMenuActive(state, value) {
-		state.menu.active = value;
+	setMenuActive(state: IUIState, bool: boolean) {
+		state.activeMenu = bool;
 	}
 };
 
 export const actions = {
-	setDarkMode({ commit }) {
-		commit('setMode','dark');
+	setDarkMode({ commit }: any) {
+		commit('setMode', 'dark');
 	},
-	setLightMode({ commit }) {
-		commit('setMode','light');
+	setLightMode({ commit }: any) {
+		commit('setMode', 'light');
 	},
-	toggleColorMode({ commit }) {
+	toggleColorMode({ commit }: any) {
 		commit('toggleColorMode');
 	},
-	setMode({ commit }, value) {
+	setMode({ commit }: any, value: string) {
 		commit('setMode', value);
 	},
-	setMenuActive({ commit }, bool) {
+	setMenuActive({ commit }: any, bool: boolean) {
 		commit('setMenuActive', bool);
 	},
-	toggleMenuActive({ commit, state }) {
-		commit('setMenuActive', !state.menu.active);
+	toggleMenuActive({ commit, state }: any) {
+		commit('setMenuActive', !state.activeMenu);
 	}
 };
