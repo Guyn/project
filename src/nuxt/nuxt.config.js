@@ -46,7 +46,20 @@ export default {
 	/*
 	 ** Nuxt.js dev-modules
 	 */
-	buildModules: ['@nuxt/typescript-build', '@nuxtjs/stylelint-module'],
+	buildModules: [
+		'@nuxt/typescript-build',
+		'@nuxtjs/stylelint-module',
+		'@nuxtjs/dotenv'
+	],
+  
+	/*
+	 ** Apollo
+	 */
+	apollo: {
+		clientConfigs: {
+			default: '~/graphql/apollo/defaultClient.js'
+		}
+	},
 
 	/*
 	 ** Nuxt.js modules
