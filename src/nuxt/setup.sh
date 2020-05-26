@@ -112,5 +112,6 @@ curl -o ${TARGET}jest.config.js -l ${URL}/nuxt.config.js --fail --silent --show-
 curl -o ${TARGET}README.md -l ${URL}/README.md --fail --silent --show-error
 curl -o ${TARGET}stylelint.config.js -l ${URL}/stylelint.config.js --fail --silent --show-error
 curl -o ${TARGET}tsconfig.json -l ${URL}/tsconfig.json --fail --silent --show-error
+curl -o ${TARGET}vue.shim.d.ts -l ${URL}/vue.shim.d.ts --fail --silent --show-error
 
 printf '\n  Config files \e[1;34mcreated!\e[0m\n\n' 
